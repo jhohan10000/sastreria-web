@@ -1,0 +1,131 @@
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #0F0F0F;
+  padding: 15px 60px;
+}
+
+/* LOGO */
+.logo img {
+  height: 100px;
+}
+
+/* MENU */
+.nav a {
+  color: #F5F5F0;
+  text-decoration: none;
+  margin-left: 30px;
+  font-weight: 500;
+  position: relative;
+}
+
+/* EFECTO HOVER ELEGANTE */
+.nav a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #C9A24D;
+  left: 0;
+  bottom: -6px;
+  transition: width 0.3s;
+}
+
+.nav a:hover::after {
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #10100f;
+  color: #F5F5F0;
+}
+
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)),
+              url("../img/fondo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding: 140px 20px;
+  text-align: center;
+  color: #F5F5F5;
+}
+
+
+.hero h2 {
+  font-size: 48px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+/* BOTÓN */
+.btn-whatsapp {
+  background-color: #25D366;
+  padding: 14px 30px;
+  border-radius: 30px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* SERVICIOS */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 30px;
+  padding: 60px;
+}
+
+.card {
+  background: #1A1A1A;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.titulo {
+  text-align: center;
+  margin: 40px 0;
+  font-family: 'Playfair Display', serif;
+}
+
+.album {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 40px;
+}
+
+.item {
+  background: #1A1A1A;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.item img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.item p {
+  margin: 15px 0 5px;
+  font-weight: bold;
+}
+
+.item span {
+  color: #C9A24D;
+  font-size: 18px;
+  display: block;
+  margin-bottom: 15px;
+}
