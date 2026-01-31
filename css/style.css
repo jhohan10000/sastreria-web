@@ -1,67 +1,150 @@
-
-body {
+/* Reset básico */
+* {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #070707;
-  color: #b3b5b0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
 }
 
+/* HEADER */
 .header {
-  background: #020103;
-  color: rgb(176, 173, 179);
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 15px 30px;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: rgba(255,255,255,0.9);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.header .logo img {
+  height: 60px; /* Logo más moderado */
 }
 
 .nav a {
-  color: rgb(197, 191, 191);
-  margin-left: 15px;
   text-decoration: none;
-  font-weight: bold;
+  margin-left: 25px;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
 }
 
+.nav a:hover {
+  color: #1a73e8;
+}
+
+/* HERO */
 .hero {
+  background: url('../img/hero-fondo.jpg') center/cover no-repeat;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: #fff;
   text-align: center;
-  padding: 60px 20px;
-  background: #ddd;
+}
+
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.45); /* oscurece fondo para texto legible */
+  padding: 50px 30px;
+  border-radius: 10px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.hero h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
 }
 
 .btn-whatsapp {
   display: inline-block;
-  margin-top: 20px;
-  padding: 12px 25px;
-  background: #25d366;
+  background-color: #25D366;
   color: white;
-  text-decoration: none;
-  border-radius: 5px;
+  padding: 12px 25px;
+  border-radius: 50px;
   font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s;
 }
 
-.servicios, .galeria {
-  padding: 40px 20px;
-  background: white;
+.btn-whatsapp:hover {
+  background-color: #1ebe5d;
 }
 
-.cards {
+/* SERVICIOS */
+.servicios {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.servicio-card {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.servicio-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.btn-ver {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #1a73e8;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn-ver:hover {
+  background-color: #1666c1;
+}
+
+/* GALERÍA */
+.galeria {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.galeria-img {
   display: flex;
-  gap: 20px;
   justify-content: center;
   flex-wrap: wrap;
+  gap: 20px;
 }
 
-.card {
-  background: #f9f9f9;
-  padding: 20px;
-  width: 250px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+.galeria-img img {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-footer {
-  text-align: center;
+/* FOOTER */
+.footer {
   padding: 20px;
-  background: #111;
+  background-color: #333;
   color: white;
+  text-align: center;
 }
