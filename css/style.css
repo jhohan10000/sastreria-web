@@ -2,13 +2,13 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #cf1313;
-  color: #88e819;
+  background: #070707;
+  color: #b3b5b0;
 }
 
 .header {
-  background: #4b1ec4;
-  color: rgb(122, 23, 222);
+  background: #020103;
+  color: rgb(176, 173, 179);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -16,7 +16,7 @@ body {
 }
 
 .nav a {
-  color: rgb(142, 4, 4);
+  color: rgb(197, 191, 191);
   margin-left: 15px;
   text-decoration: none;
   font-weight: bold;
