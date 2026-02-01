@@ -199,3 +199,12 @@ footer {
 .btn:hover {
   background: #34495e;
 }
+/* Asegura que los títulos de sección estén en bloque separado */
+#modelos h2 {
+  display: block;      /* fuerza que ocupe toda la línea */
+  clear: both;         /* limpia cualquier float o flex previo */
+  width: 100%;         /* ocupa todo el ancho */
+  text-align: left;    /* título alineado a la izquierda */
+  margin-top: 40px;    /* espacio arriba */
+  margin-bottom: 20px; /* espacio debajo */
+}
