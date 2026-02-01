@@ -1,150 +1,124 @@
-/* Reset básico */
+/* --- RESET BÁSICO --- */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
-/* HEADER */
-.header {
+body {
+  background-color: #0e0e0e;
+  color: #f5f5f5;
+}
+
+/* --- BARRA DE NAVEGACIÓN --- */
+header {
+  background: #000;
+  padding: 15px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 25px 40px;
-  background-color: rgba(15, 13, 13, );
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.header .logo img {
-  height: 60px; /* Logo más moderado */
+header img {
+  height: 50px; /* logo más moderado */
 }
 
-.nav a {
+nav a {
+  color: #d4af37; /* dorado */
   text-decoration: none;
   margin-left: 25px;
-  color: #333;
   font-weight: 500;
-  transition: color 0.3s;
 }
 
-.nav a:hover {
-  color: #1a73e8;
+nav a:hover {
+  color: #fff;
 }
 
-/* HERO */
+/* --- PORTADA --- */
 .hero {
-  background: url('../img/hero-fondo.jpg') center/cover no-repeat;
-  height: 80vh;
+  background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)),
+              url("img/fondo-sastreria.jpg") center/cover no-repeat;
+  height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
-  color: #333030;
   text-align: center;
-}
-
-.hero-overlay {
-  background-color: rgba(0, 0, 0, 0.45); /* oscurece fondo para texto legible */
-  padding: 50px 30px;
-  border-radius: 10px;
 }
 
 .hero h1 {
-  font-size: 48px;
-  margin-bottom: 15px;
-}
-
-.hero h2 {
-  font-size: 24px;
-  margin-bottom: 15px;
-  font-style: italic;
+  font-size: 3rem;
+  color: #d4af37;
 }
 
 .hero p {
-  font-size: 18px;
-  margin-bottom: 20px;
+  margin: 20px 0;
+  font-size: 1.2rem;
 }
 
-.btn-whatsapp {
-  display: inline-block;
-  background-color: #25D366;
-  color: white;
-  padding: 12px 25px;
-  border-radius: 50px;
-  font-weight: bold;
+.hero a {
+  padding: 12px 30px;
+  background: #d4af37;
+  color: #000;
   text-decoration: none;
-  transition: background 0.3s;
+  font-weight: bold;
+  border-radius: 30px;
 }
 
-.btn-whatsapp:hover {
-  background-color: #1ebe5d;
+/* --- SECCIONES --- */
+.section {
+  padding: 80px 60px;
 }
 
-/* SERVICIOS */
-.servicios {
-  padding: 60px 20px;
+.section h2 {
   text-align: center;
-  background-color: #f9f9f9;
+  color: #d4af37;
+  margin-bottom: 50px;
+  font-size: 2.2rem;
 }
 
-.servicio-card {
-  max-width: 400px;
-  margin: 0 auto;
-  background-color: #fff;
-  border-radius: 10px;
-  padding: 25px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+/* --- MODELOS --- */
+.modelos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
 }
 
-.servicio-card img {
+.card {
+  background: #161616;
+  border-radius: 15px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform .3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card img {
   width: 100%;
-  border-radius: 10px;
-  margin-bottom: 15px;
+  height: 350px;
+  object-fit: cover;
 }
 
-.btn-ver {
-  display: inline-block;
-  margin-top: 10px;
-  background-color: #1a73e8;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 50px;
+.card h3 {
+  margin: 15px 0 5px;
+  color: #fff;
+}
+
+.card span {
+  color: #d4af37;
+  font-size: 1.1rem;
+}
+
+.card a {
+  display: block;
+  margin: 15px;
+  padding: 10px;
+  background: #d4af37;
+  color: #000;
+  border-radius: 25px;
   text-decoration: none;
   font-weight: bold;
-  transition: background 0.3s;
-}
-
-.btn-ver:hover {
-  background-color: #1666c1;
-}
-
-/* GALERÍA */
-.galeria {
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.galeria-img {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.galeria-img img {
-  width: 300px;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
-/* FOOTER */
-.footer {
-  padding: 20px;
-  background-color: #333;
-  color: white;
-  text-align: center;
 }
