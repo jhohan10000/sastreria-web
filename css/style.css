@@ -145,14 +145,57 @@ footer {
     padding: 80px 20px;
   }
 }
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;        /* espacio entre tarjetas */
-  margin-bottom: 40px; /* espacio después de cada sección */
+
+/* =============================
+   Secciones de Modelos
+=============================*/
+
+/* Cada título de sección empieza en nueva línea */
+#modelos h2 {
+  clear: both;           /* limpia cualquier float previo */
+  margin-top: 40px;      /* espacio arriba del título */
+  margin-bottom: 20px;   /* espacio debajo del título */
+  font-size: 1.8rem;
 }
 
+/* Contenedor de tarjetas */
+.cards {
+  display: flex;         /* acomoda las tarjetas en fila */
+  flex-wrap: wrap;       /* permite que las tarjetas pasen a la siguiente línea */
+  gap: 20px;             /* separación entre tarjetas */
+  margin-bottom: 40px;   /* espacio debajo de cada grupo de tarjetas */
+}
+
+/* Tarjetas individuales */
 .card {
-  flex: 1 1 200px;  /* ancho flexible, mínimo 200px */
+  flex: 1 1 200px;       /* ancho mínimo 200px y se adapta */
   box-sizing: border-box;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Imagen dentro de la tarjeta */
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Botón de cotizar */
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 15px;
+  background: #2c3e50;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #34495e;
 }
