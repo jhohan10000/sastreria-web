@@ -6,7 +6,6 @@
   font-family: 'Arial', sans-serif;
 }
 
-/* Body y fondo */
 body {
   background: linear-gradient(to bottom right, #111, #222);
   color: #fff;
@@ -17,7 +16,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 10px 30px;
   background: #000;
 }
 
@@ -28,7 +27,7 @@ body {
 .navbar ul {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 25px;
 }
 
 .navbar ul li a {
@@ -47,25 +46,25 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 100px 20px;
+  padding: 120px 20px;
   background: url('../img/fondo.jpg') center/cover no-repeat;
 }
 
 .hero h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #FFD700;
   text-shadow: 2px 2px #000;
 }
 
 /* Sección modelos */
 #modelos {
-  padding: 50px 20px;
+  padding: 60px 20px;
 }
 
 #modelos h2 {
   text-align: center;
-  margin-bottom: 30px;
-  font-size: 1.8rem;
+  margin-bottom: 40px;
+  font-size: 2rem;
   color: #FFD700;
 }
 
@@ -74,16 +73,16 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 25px;
 }
 
 .card {
   background: linear-gradient(to top, #111, #333);
-  border-radius: 10px;
-  padding: 15px;
-  width: 250px;
+  border-radius: 15px;
+  padding: 20px;
+  width: 270px;
   text-align: center;
-  transition: transform 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .card img {
@@ -92,36 +91,43 @@ body {
 }
 
 .card h3 {
-  margin: 10px 0;
-  font-size: 1.2rem;
+  margin: 15px 0 10px;
+  font-size: 1.3rem;
 }
 
 .card p {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   font-weight: bold;
   color: #FFD700;
 }
 
 .card .btn {
   display: inline-block;
-  padding: 10px 15px;
+  padding: 12px 18px;
   background: #FFD700;
   color: #000;
-  border-radius: 5px;
+  border-radius: 6px;
   text-decoration: none;
   font-weight: bold;
+  transition: background 0.3s;
+}
+
+.card .btn:hover {
+  background: #e6c200;
 }
 
 .card:hover {
   transform: scale(1.05);
+  box-shadow: 0 5px 15px #000;
 }
 
 /* Footer */
 footer {
   text-align: center;
-  padding: 20px;
+  padding: 25px;
   background: #000;
   color: #FFD700;
+  font-size: 0.9rem;
 }
 
 /* Responsive */
@@ -132,10 +138,10 @@ footer {
   }
   
   .navbar ul {
-    gap: 10px;
+    gap: 15px;
   }
 
   .hero {
-    padding: 60px 20px;
+    padding: 80px 20px;
   }
 }
