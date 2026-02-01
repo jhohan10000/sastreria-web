@@ -91,3 +91,49 @@ body {
     linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
     url("../img/fondo-sastreria.jpg") center/cover no-repeat;
 }
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: #000;
+}
+.logo img {
+  height: 55px;
+}
+@media (min-width: 1024px) {
+
+  .header {
+    padding: 10px 80px;
+  }
+
+  .logo img {
+    height: 45px;
+  }
+
+  .nav a {
+    font-size: 16px;
+    margin-left: 20px;
+  }
+
+}
+@media (max-width: 768px) {
+
+  .header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .logo img {
+    height: 60px;
+  }
+
+  .nav a {
+    font-size: 14px;
+    margin: 0 10px;
+  }
+
+}
+.hero h2 {
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+}
