@@ -145,3 +145,14 @@ footer {
     padding: 80px 20px;
   }
 }
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;        /* espacio entre tarjetas */
+  margin-bottom: 40px; /* espacio después de cada sección */
+}
+
+.card {
+  flex: 1 1 200px;  /* ancho flexible, mínimo 200px */
+  box-sizing: border-box;
+}
